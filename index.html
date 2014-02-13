@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+     <title>CSV</title>
+     <link href="global.css" rel="stylesheet" type="text/css">
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script type="text/javascript" src="csv.js"></script>
+  </head>
+  
+  <body>
+    <h1>Analizador Comma Separated Value [CSV]</h1>
+    <div class="info">
+      <p>Escribe una cadena valida en formato CSV </p>
+    </div>
+
+    <div id="link">
+      Practica - CSV Analizador | <a href="index.html">http://0100354256.github.io/CSV/</a> | alu0100354256
+    </div>
+
+    <div id="test">
+      <a href="tests/index.html"> Acceso a los tests </a>
+    </div>
+
+    <table>
+      <tr>
+        <th>Cadena CSV:</th>
+        <td><textarea autofocus cols="80" rows="5" id="original">
+        "Lorem", "ipsum", "dolor"
+        "sit", "amet", "consectetur"
+        "adipiscing", "elit", "Quisque"
+        "placerat", "vitae", "mi"</textarea></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <button type="button">Generar Tabla</button><br>
+    <span class="output" id="final"></span>
+    <div id="eerror"></div>
+    
+  </body>
+</html>
