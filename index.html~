@@ -33,7 +33,8 @@
         <td><textarea autofocus cols="80" rows="5" id="original">
         "Lorem", "ipsum", "dolor"
         "sit", "amet", "consectetur"
-        "adipiscing", "elit", "Quisque"</textarea></td>
+        "adipiscing", "elit", "Quisque"
+        "placerat", "vitae", "mi"</textarea></td>
       </tr>
     </table>
 

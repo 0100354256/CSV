@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mocha.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <script type="text/html"  id="tm" > <% _.each(items, function(name) { %> <td><%= name %></td>  <% }); %> </script>
+    <script src="../csv.js"></script>
+    <script src="chai.js"></script>
+
+    <div id="mocha"></div>
+    <script src="mocha.js"></script>
+    <script>mocha.setup('tdd')</script>
+    <script src="tests.js"></script>
+    <script>
+      mocha.run();
+    </script>
+
+    <table>
+      <tr>
+        <th>Cadena CSV:</th>
+        <td><textarea autofocus cols="80" rows="5" id="original">
+        "Lorem", "ipsum", "dolor"
+        "sit", "amet", "consectetur"
+        "adipiscing", "elit", "Quisque"
+        "placerat", "vitae", "mi"</textarea></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <button type="button">Generar Tabla</button><br>
+    <span class="output" id="finalT"></span>
+  </body>
+</html>

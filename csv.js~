@@ -51,6 +51,9 @@ function calculate() {
   r.push('</table>');
 
   finalT.innerHTML = r.join('\n');
+  
+  if(error == true)
+    mensaje.innerHTML = "";
 }
 
 if (typeof(Storage !== "undefined")){
